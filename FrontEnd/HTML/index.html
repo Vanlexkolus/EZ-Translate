@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/FrontEnd/CSS/style.css">
+    <script src="https://kit.fontawesome.com/c69167dce1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="logo">EATranslator</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Developers</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card input-wrapper">
+            <div class="from">
+                <span class="heading">from :</span>
+                <!---Custome Select--->
+                <div class="dropdown-container" id="input-language">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-globe" style="color: #000000; font-size: 17px;"></i>
+                        <span class="selected">Auto Detect</span>
+                        <i class="fa-solid fa-circle-chevron-down" style="color:#000000; font-size: 17px;"></i>
+
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Text Area--->
+            <div class="text-area">
+                <textarea name="" 
+                id="input-text" 
+                cols="30" rows="10" 
+                placeholder="Enter your text here"></textarea>
+
+                <div class="chars"><span id="input-chars">0</span> / 5000</div>
+            </div>
+            <div class="card-bottom">
+                <p>Or choose your document</p>
+                <label for="upload-document">
+                    <span id="upload-titile">Choose File</span>
+                    <i class="fa-sharp fa-solid fa-cloud-arrow-up" style="font-size: 17px; color: #000;"></i>
+                    <input type="file" id="upload-document" hidden />
+                    
+                </label>
+            </div>
+        </div>
+
+        <div class="center">
+            <div class="swap-position">
+                <i class="fa-solid fa-right-left" style="font-size: 17px;"></i>
+            </div>
+        </div>
+
+        <div class="card output-wrapper">
+            <div class="to">
+                <span class="heading">to :</span>
+                <!---Custome Select--->
+                <div class="dropdown-container" id="input-language">
+                    <div class="dropdown-toggle">
+                        <i class="fa-solid fa-globe" style="color: #000000; font-size: 17px;"></i>
+                        <span class="selected">English</span>
+                        <i class="fa-solid fa-circle-chevron-down" style="color:#000000; font-size: 17px;"></i>
+
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li class="option active">Option 1</li>
+                        <li class="option">Option 2</li>
+                    </ul>
+                </div>
+            </div>
+            <!--Text Area--->
+            <div class="text-area">
+                <textarea name="" 
+                id="output-text" 
+                cols="30" rows="10" 
+                placeholder="Translated text will appear here"></textarea>
+            </div>
+            <div class="card-bottom">
+                <p>Or download a document</p>
+                <button id="download-document">
+                    <span>Download</span>
+                    <i class="fa-solid fa-cloud-arrow-down" style="color: #000000;"></i>
+                </button>
+        </div>
+    </div>
+
+    <div class="mode">
+        <label for="" class="toggle">
+            <div class="toggle-track">
+                <input type="checkbox" class="toogle-checkbox" id="dark-mode-btn">
+                <span class="toggle-thumb"></span>
+                <img src="/FrontEnd/Assets/themes.png" alt="" width="32px">
+                <img src="/FrontEnd/Assets/themes (1).png" alt="" width="32px">
+            </div>
+        </label>
+    </div>
+
+    <script src="/FrontEnd/SCRIPT/script.js"></script>
+</body>
+</html>
