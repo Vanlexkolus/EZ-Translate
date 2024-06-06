@@ -22,7 +22,7 @@
 
 .heroIMG {
     position: relative;
-    background-image: url('/FrontEnd/Assets/sunflower.jpg');
+    background-image: url('/Assets/sunflower.jpg');
     background-size: cover;
     background-position: center;
     height: 50vh;

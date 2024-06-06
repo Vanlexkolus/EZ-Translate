@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/header.css">
     <script src="https://kit.fontawesome.com/c69167dce1.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
+        <h2 class="logo">EATranslator</h2>
         <nav>
-            <h2 class="logo">EATranslator</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -19,7 +20,7 @@
             </ul>
         </nav>
     </header>
-
+    <div class="hero"></div>
     <div class="container">
         <div class="card input-wrapper">
             <div class="from">
@@ -54,6 +55,7 @@
                 <i class="fa-solid fa-right-left" style="font-size: 17px;"></i>
             </div>
         </div>
+
 
         <div class="card output-wrapper">
             <div class="to">
@@ -92,6 +94,13 @@
             </div>
         </label>
     </div>
+
+    <div class="history-container">
+    <h3>Translation History</h3>
+    <ul id="translation-history"></ul>
+</div>
+
+
 
     <script src="/SCRIPT/languages.js"></script>
     <script src="/SCRIPT/script.js"></script>
